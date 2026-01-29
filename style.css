@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 15px 50px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url("https://images.unsplash.com/photo-1555992336-cbf7f6c27a45") center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    margin: 15px 0;
+}
+
+.hero button {
+    padding: 10px 25px;
+    font-size: 16px;
+    background: #ff9800;
+    border: none;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    padding: 50px;
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.item {
+    background: #f4f4f4;
+    padding: 20px;
+    width: 200px;
+}
+
+/* About */
+.about {
+    padding: 50px;
+    background: #eee;
+    text-align: center;
+}
+
+/* Contact */
+.contact {
+    padding: 50px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header {
+        flex-direction: column;
+    }
+}
