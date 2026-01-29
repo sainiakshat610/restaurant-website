@@ -61,52 +61,48 @@ nav a:hover {
 
 /* Menu */
 .menu {
-    padding: 50px;
+    padding: 60px 20px;
     text-align: center;
+    background: #fff;
+}
+
+.menu h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
 }
 
 .menu-items {
     display: flex;
     justify-content: center;
     gap: 30px;
-    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .item {
-    background: #f4f4f4;
-    padding: 20px;
-    width: 200px;
+    background: #f9f9f9;
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
-/* About */
-.about {
-    padding: 50px;
-    background: #eee;
-    text-align: center;
+.item:hover {
+    transform: translateY(-8px);
 }
 
-/* Contact */
-.contact {
-    padding: 50px;
-    text-align: center;
+.item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
 }
 
-/* Footer */
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 15px;
+.item h3 {
+    margin: 15px 0 5px;
+    font-size: 22px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .menu-items {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    header {
-        flex-direction: column;
-    }
+.item p {
+    padding: 0 15px 20px;
+    color: #555;
 }
